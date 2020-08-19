@@ -1,0 +1,29 @@
+{
+  "name": "students-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www -i data/db.json",
+    "test": "jest",
+    "test:dev": "jest --watchAll"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "<rootDir>/data/\\w+.json"
+    ]
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "lodash-id": "^0.14.0",
+    "lowdb": "^1.0.0",
+    "superagent": "^5.2.2",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.2"
+  }
+}
