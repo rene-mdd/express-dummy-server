@@ -18,6 +18,7 @@ app.use("/api", logs);
 /**
  * Routes
  */
+
 app.use("/api/students", studentRoutes);
 
 module.exports = app;
